@@ -1,152 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zeneeda - Launching Soon</title>
-    <style>
-        /* General styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Zeneeda - Tech-forward and reliable services"/>
+  <title>Zeneeda</title>
+  <<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
 
-        /* Top section with video background */
-        .video-background {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
 
-        .video-background video {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-
-        /* Text overlays for the video */
-        .top-text {
-            position: relative;
-            padding-top: 30px;
-            color: white;
-            font-size: 2.5rem;
-            font-weight: bold;
-            letter-spacing: 8px;
-            z-index: 2;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .center-text {
-            position: relative;
-            margin-bottom: 30vh;
-            color: white;
-            font-size: 4rem;
-            font-weight: bold;
-            z-index: 2;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        /* Bottom section with solid color background */
-        .subscribe {
-            background-color: #f4f4f4;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .subscribe h3 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .subscribe p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-
-        .subscribe form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .subscribe input[type="email"] {
-            padding: 0.8rem;
-            font-size: 1rem;
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .subscribe button {
-            padding: 0.8rem 2rem;
-            font-size: 1rem;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .subscribe button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer p {
-            margin: 0.5rem 0;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- Video Background Section -->
-<section class="video-background">
-    <video autoplay muted loop>
-        <source src="bg-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="top-text">ZENEEDA</div>
-    <div class="center-text">Launching Soon</div>
-</section>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-text" >Zeneeda</span>
+      </div>
 
-<!-- Bottom Section (Subscribe) -->
-<section class="subscribe">
-    <h3>Subscribe</h3>
-    <p>Sign up to be the first to get updates.</p>
-    <form>
-        <input type="email" placeholder="Email" required />
-        <button type="submit">SIGN UP</button>
-    </form>
-</section>
+      <div class="nav-group">
+        <nav class="nav-links" id="navMenu">
+          <a href="#home" class="nav-buttons" class="active">Home</a>
+          <a href="#about-us" class="nav-buttons">About Us</a>
+          <a href="#why" class="nav-buttons">Why Zeneeda?</a>
+          <a href="#serviceSection" class="nav-buttons">Services</a>
+          
+          <a href="#testimonialSection" class="nav-buttons">Testimonials</a>
+          <a href="#contactUsSection" class="nav-buttons">Contact Us</a>
+          <!-- <a href="#get-started" class="btn-primary">Get Started</a> -->
+        </nav>
 
-<!-- Footer -->
-<footer>
-    <p>© 2024 Zeneeda - All Rights Reserved.</p>
-    <p>Powered by You 😉</p>
-</footer>
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      </div>
+    </div>
+  </header>
+   <!-- Hero Section -->
+   <section class="hero-section" id="home">
+    <div class="hero-wrapper _hero">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Smart Support. Seamless Solutions. <br>
+          <span class="highlight">Powered by People + Technology.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Zeneeda delivers digital services, virtual talent, and tech automation to boost your business.
+        </p>
+        <div class="hero-ctas">
+          <a href="#services" class="btn-primary">Explore Services</a>
+          <a href="#contact" class="btn-secondary">Request a Callback</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./source/hero_img1.jpg" alt="Hero Illustration showing people with technology">
+      </div>
+    </div>
+  </section>
 
+
+
+
+
+
+  <section id="about-us" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h4 class="about-subtitle">Who We Are</h4>
+        <h2 class="about-title">
+          Empowering Innovation Through Technology & Collaboration
+        </h2>
+        <p class="about-description">
+          We are a passionate team dedicated to building digital experiences that
+          make a difference. With a blend of creativity, technical expertise, and a
+          customer-first approach, we deliver impactful solutions that help businesses
+          thrive in the modern world. From software development to strategic consulting,
+          we are committed to driving success through innovation.
+        </p>
+        <p class="about-description">
+          Our values are rooted in integrity, excellence, and continuous growth. Whether
+          it's working with startups or established enterprises, we tailor our approach
+          to meet unique challenges and create meaningful results.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="./source/abt1.jpg" alt="About our team" />
+      </div>
+    </div>
+  </section>
+  
+
+  <div class="stats-container" id="stats">
+    <div class="stat">
+      <div class="number" data-target="999">0</div>
+      <div class="lvl1">Clients</div>
+    </div>
+    <div class="stat">
+      <div class="number" data-target="999">0</div>
+      <div class="lvl1">Projects</div>
+    </div>
+    <div class="stat">
+      <div class="number" data-target="999">0</div>
+      <div class="label">Hours Of Support</div>
+    </div>
+    <div class="stat">
+      <div class="number" data-target="999">0</div>
+      <div class="lvl1">Workers</div>
+    </div>
+  </div>
+  
+
+
+
+  <section id="why" class="why-section">
+    <div class="why-container">
+      <div class="why-left">
+        <img src="./source/why1.jpg" alt="Team working illustration" class="why-image" />
+      </div>
+      <div class="why-right">
+        <div class="why-feature">
+          <span class="checkmark">✔</span> Cost-effective
+        </div>
+        <div class="why-feature">
+          <span class="checkmark">✔</span>  Scalable
+        </div>
+        <div class="why-feature">
+          <span class="checkmark">✔</span> AI-Ready
+        </div>
+        <div class="why-feature">
+          <span class="checkmark">✔</span> Human-first Approach
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+  <section class="services-section" id="serviceSection">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">
+          <!-- Icon image placeholder -->
+          <i class="ri-home-office-line"></i>
+        </div>
+        <div class="service-title"> Virtual Office Assistants
+        </div>
+        <div class="service-desc">
+            Virtual Office Assistants help manage office tasks like scheduling, emails, and admin support remotely.
+        </div>
+        <a href="#" class="learn-more">Learn More </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+            <i class="ri-store-2-line"></i>
+        </div>
+        <div class="service-title"> E-Commerce Development
+        </div>
+        <div class="service-desc">
+            E-Commerce Development involves building online stores for seamless product browsing, purchasing, and payments.
+        </div>
+        <a href="#" class="learn-more">Learn More </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+            <i class="ri-money-rupee-circle-line"></i>
+        </div>
+        <div class="service-title"> Digital & Social Media Marketing
+        </div>
+        <div class="service-desc">
+            Digital & Social Media Marketing promotes brands online through strategies like content creation, ads, and audience engagement.
+        </div>
+        <a href="#" class="learn-more">Learn More </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+            <i class="ri-presentation-line"></i>
+        </div>
+        <div class="service-title">Training & Skill Development
+        </div>
+        <div class="service-desc">
+            Training & Skill Development enhances individual abilities through structured learning and hands-on experience.
+        </div>
+        <a href="#" class="learn-more">Learn More </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+            <i class="ri-bar-chart-box-line"></i>
+        </div>
+        <div class="service-title">Service Five</div>
+        <div class="service-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, deserunt.
+        </div>
+        <a href="#" class="learn-more">Learn More </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+            <i class="ri-message-line"></i>
+        </div>
+        <div class="service-title">Service Six</div>
+        <div class="service-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, deserunt.
+        </div>
+        <a href="#" class="learn-more">Learn More </a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section class="testimonial-container" id="testimonialSection">
+    <h2 class="testimonial-title">What they are saying <span>about us</span></h2>
+    <div class="testimonial-carousel-wrapper">
+      <button class="testimonial-arrow left-arrow">&#10094;</button>
+      <div class="testimonial-carousel" id="testimonialCarousel">
+        <div class="testimonial-card">
+          <p class="testimonial-text">This agency transformed our online presence. Professional, timely, and incredibly creative.</p>
+          <img src="https://i.pravatar.cc/100?img=1" alt="Client 1" />
+          <h4>Emily Carter</h4>
+          <span>Marketing Manager</span>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">Amazing experience from start to finish. Highly recommend their services!</p>
+          <img src="https://i.pravatar.cc/100?img=2" alt="Client 2" />
+          <h4>Liam Peterson</h4>
+          <span>Founder, GreenHive</span>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">They truly care about our brand and always go above and beyond.</p>
+          <img src="https://i.pravatar.cc/100?img=3" alt="Client 3" />
+          <h4>Sophia Daniels</h4>
+          <span>CEO, StellarEd</span>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">Their support team is responsive and reliable. They solved every challenge we faced.</p>
+          <img src="https://i.pravatar.cc/100?img=4" alt="Client 4" />
+          <h4>Noah Reed</h4>
+          <span>CTO, WebCore</span>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">The designs exceeded our expectations. Fresh, modern, and exactly what we needed.</p>
+          <img src="https://i.pravatar.cc/100?img=5" alt="Client 5" />
+          <h4>Ava Morgan</h4>
+          <span>Creative Director</span>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">Highly professional and super creative team. Loved working with them!</p>
+          <img src="https://i.pravatar.cc/100?img=6" alt="Client 6" />
+          <h4>James Owen</h4>
+          <span>Product Manager</span>
+        </div>
+      </div>
+      <button class="testimonial-arrow right-arrow">&#10095;</button>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+  <section id="contactUsSection" class="contactUs-section">
+    <div class="contactUs-container">
+      <div class="contactUs-title">
+        <h2>Need Help? <span>Contact Us</span></h2>
+      </div>
+  
+      <div class="contactUs-grid">
+        <!-- Contact Info -->
+        <div class="contactUs-details">
+          <div class="contactUs-infoBox">
+            <i class="ri-pin-distance-line" class="contactUs-icon"></i>
+            <div>
+              <h3>Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+  
+          <div class="contactUs-infoBox">
+            <i class="ri-phone-line" class="contactUs-icon"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+  
+          <div class="contactUs-infoBox">
+            <i class="ri-mail-line" class="contactUs-icon"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>info@example.com</p>
+            </div>
+          </div>
+  
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+            frameborder="0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+  
+        <!-- Contact Form -->
+        <div class="contactUs-formWrapper">
+          <form class="contactUs-form" action="">
+            <div class="contactUs-formGrid">
+              <div class="contactUs-formGroup">
+                <label for="contactUs-name">Your Name</label>
+                <input type="text" id="contactUs-name" required />
+              </div>
+              <div class="contactUs-formGroup">
+                <label for="contactUs-email">Your Email</label>
+                <input type="email" id="contactUs-email" required />
+              </div>
+            </div>
+            <div class="contactUs-formGroup">
+              <label for="contactUs-subject">Subject</label>
+              <input type="text" id="contactUs-subject" required />
+            </div>
+            <div class="contactUs-formGroup">
+              <label for="contactUs-message">Message</label>
+              <textarea id="contactUs-message" rows="6" required ></textarea>
+            </div>
+            <div class="contactUs-submit">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  
+
+
+  <footer class="zeneeda-footer">
+    <div class="z-footer-container">
+      <div class="z-footer-col">
+        <h2 class="z-footer-logo">Zeneeda</h2>
+        <p>A108 Adam Street<br>New York, NY 535022</p>
+        <p><strong>Phone:</strong> +1 5589 55488 55</p>
+        <p><strong>Email:</strong> info@zeneeda.com</p>
+      </div>
+  
+      <div class="z-footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#serviceSection">Services</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+  
+      <div class="z-footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">AI Integration</a></li>
+          <li><a href="#">Product Management</a></li>
+        </ul>
+      </div>
+  
+      <div class="z-footer-col">
+        <h4>Follow Us</h4>
+        <p>Let’s connect and grow your business together.</p>
+        <div class="z-social-icons">
+            <a href="#" aria-label="X (Twitter)"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          </div>
+          
+      </div>
+    </div>
+    <div class="z-footer-bottom">
+      <p>&copy; Copyright <strong>Zeneeda</strong>. All Rights Reserved</p>
+    </div>
+  
+   
+  </footer>
+  
+  
+  
+  <script src="script.js"></script>
 </body>
-
 </html>
