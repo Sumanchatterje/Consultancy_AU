@@ -177,7 +177,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    padding: 2rem 1.5rem 0rem; /* Padding in viewport height (8vh top, 6vh bottom) */
+    padding: 6rem 1.5rem 0rem; /* Padding in viewport height (8vh top, 6vh bottom) */
     /* border: 1px solid black; */
     background: linear-gradient(
       180deg,
