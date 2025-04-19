@@ -42,6 +42,7 @@ body {
 }
   
 /* Logo */
+
 .logo {
     font-weight: 600;
     font-size: 1.6rem;
@@ -776,6 +777,99 @@ body {
 
 
 
+  .testimonial-section {
+    padding: 3rem 1rem;
+    background: linear-gradient(145deg, #eaf3ff, #f6faff);
+    color: white;
+    text-align: center;
+  }
+  
+  .testimonial-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0b2c5d;
+  }
+  .testimonial-section h2 span{
+    color: #007bff;
+  }
+  .carousel-container {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .testimonial-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial-card {
+    background: linear-gradient(145deg, #ffffff, #e0edff);
+    color: #0b2c5d;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 1rem;
+    flex: 0 0 calc(100% / 3 - 2rem);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: calc(100% / 3 - 2rem);
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  }
+  
+  .testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  
+  .testimonial-author img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .testimonial-author span {
+    font-weight: 600;
+    color: #3a5bfd;
+    font-size: 0.95rem;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-card {
+      flex: 0 0 calc(100% / 2 - 2rem);
+      min-width: calc(100% / 2 - 2rem);
+    }
+    .testimonial-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      color: #0b2c5d;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonial-card {
+      flex: 0 0 calc(100% - 2rem);
+      min-width: calc(100% - 2rem);
+    }
+    .testimonial-section h2 {
+      font-size: 27px;
+      margin-bottom: 2rem;
+      color: #0b2c5d;
+    }
+  }
   
   
   
@@ -1378,7 +1472,7 @@ body {
         margin-top: 10px;
       }
     
-    }
+    
   
       .why-container {
         display: flex;

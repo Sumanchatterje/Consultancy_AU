@@ -86,7 +86,40 @@ window.addEventListener('scroll', () => {
 
 
 
+  const carousel = document.getElementById("carousel");
+  const cards = Array.from(carousel.children);
+  let currentIndex = 0;
+  let cardWidth;
 
+  function updateCardWidth() {
+    if (window.innerWidth <= 480) {
+      cardWidth = carousel.querySelector(".testimonial-card").offsetWidth + 32; // margin
+    } else if (window.innerWidth <= 768) {
+      cardWidth = carousel.querySelector(".testimonial-card").offsetWidth + 32;
+    } else {
+      cardWidth = carousel.querySelector(".testimonial-card").offsetWidth + 32;
+    }
+  }
+
+  function startInfiniteLoop() {
+    setInterval(() => {
+      carousel.style.transition = "transform 0.5s ease-in-out";
+      carousel.style.transform = `translateX(-${cardWidth}px)`;
+
+      setTimeout(() => {
+        // Move first card to end
+        carousel.appendChild(carousel.firstElementChild);
+        carousel.style.transition = "none";
+        carousel.style.transform = `translateX(0)`;
+      }, 500);
+    }, 3000);
+  }
+
+  window.addEventListener("resize", updateCardWidth);
+  window.addEventListener("DOMContentLoaded", () => {
+    updateCardWidth();
+    startInfiniteLoop();
+  });
 
 
 

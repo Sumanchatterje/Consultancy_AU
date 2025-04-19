@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Looping Testimonial Carousel</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4ff;
+  color: #0b2c5d;
+}
+
+.testimonial-section {
+  padding: 3rem 1rem;
+  background: linear-gradient(145deg, #eaf3ff, #f6faff);
+  color: white;
+  text-align: center;
+}
+
+.testimonial-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0b2c5d;
+}
+
+.carousel-container {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  background: linear-gradient(145deg, #ffffff, #e0edff);
+  color: #0b2c5d;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin: 1rem;
+  flex: 0 0 calc(100% / 3 - 2rem);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: calc(100% / 3 - 2rem);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.testimonial-author img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-author span {
+  font-weight: 600;
+  color: #3a5bfd;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 calc(100% / 2 - 2rem);
+    min-width: calc(100% / 2 - 2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    flex: 0 0 calc(100% - 2rem);
+    min-width: calc(100% - 2rem);
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<section class="testimonial-section">
+  <h2>What users say about us</h2>
+
+  <div class="carousel-container">
+    <div class="testimonial-carousel" id="carousel">
+      <!-- 6 Testimonials -->
+      <div class="testimonial-card">
+        <p>“Zeneeda helped us streamline operations and boost productivity with ease.”</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="">
+          <span>Monica Elay</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>“The virtual support they offer is unmatched. Highly recommended!”</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="">
+          <span>James Scott</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>“Automation tools they provided saved us hours every week.”</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="">
+          <span>Amy Lin</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>“Their team is responsive, tech-savvy, and professional.”</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="">
+          <span>Daniel Ray</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>“A perfect blend of people and technology. We’re thrilled!”</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="">
+          <span>Sara Kim</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>“They elevated our business with smart solutions and great support.”</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="">
+          <span>Alex Moore</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const carousel = document.getElementById("carousel");
+  const cards = Array.from(carousel.children);
+  let currentIndex = 0;
+  let cardWidth;
+
+  function updateCardWidth() {
+    if (window.innerWidth <= 480) {
+      cardWidth = carousel.querySelector(".testimonial-card").offsetWidth + 32; // margin
+    } else if (window.innerWidth <= 768) {
+      cardWidth = carousel.querySelector(".testimonial-card").offsetWidth + 32;
+    } else {
+      cardWidth = carousel.querySelector(".testimonial-card").offsetWidth + 32;
+    }
+  }
+
+  function startInfiniteLoop() {
+    setInterval(() => {
+      carousel.style.transition = "transform 0.5s ease-in-out";
+      carousel.style.transform = `translateX(-${cardWidth}px)`;
+
+      setTimeout(() => {
+        // Move first card to end
+        carousel.appendChild(carousel.firstElementChild);
+        carousel.style.transition = "none";
+        carousel.style.transform = `translateX(0)`;
+      }, 500);
+    }, 3000);
+  }
+
+  window.addEventListener("resize", updateCardWidth);
+  window.addEventListener("DOMContentLoaded", () => {
+    updateCardWidth();
+    startInfiniteLoop();
+  });
+</script>
+
+</body>
+</html>
