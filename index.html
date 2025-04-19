@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Zeneeda - Tech-forward and reliable services"/>
   <title>Zeneeda</title>
-  <<link
+  <link
   href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
   rel="stylesheet"
 />
@@ -20,9 +20,10 @@
   <header class="navbar">
     <div class="container">
       <div class="logo">
-        <span class="logo-text" >Zeneeda</span>
+        <span class="logo-text">Zeneeda</span>
       </div>
-
+  
+      <!-- Hamburger Menu Icon -->
       <div class="nav-group">
         <nav class="nav-links" id="navMenu">
           <a href="#home" class="nav-buttons" class="active">Home</a>
@@ -37,10 +38,21 @@
 
         <div class="menu-toggle" id="menuToggle">&#9776;</div>
       </div>
+      <!-- Sidebar Navigation -->
+      <nav class="nav-sidebar" id="navSidebar">
+        <div class="close-icon" id="closeSidebar">&times;</div>
+        <a href="#home" class="nav-buttons">Home</a>
+        <a href="#about-us" class="nav-buttons">About Us</a>
+        <a href="#why" class="nav-buttons">Why Zeneeda?</a>
+        <a href="#serviceSection" class="nav-buttons">Services</a>
+        <a href="#testimonialSection" class="nav-buttons">Testimonials</a>
+        <a href="#contactUsSection" class="nav-buttons">Contact Us</a>
+      </nav>
     </div>
   </header>
+   
    <!-- Hero Section -->
-   <section class="hero-section" id="home">
+    <section class="hero-section" id="home">
     <div class="hero-wrapper _hero">
       <div class="hero-text">
         <h1 class="hero-title">
@@ -59,14 +71,14 @@
         <img src="./source/hero_img1.jpg" alt="Hero Illustration showing people with technology">
       </div>
     </div>
-  </section>
+  </section> 
 
 
 
 
 
 
-  <section id="about-us" class="about-section">
+    <section id="about-us" class="about-section">
     <div class="about-container">
       <div class="about-text">
         <h4 class="about-subtitle">Who We Are</h4>
@@ -90,32 +102,36 @@
         <img src="./source/abt1.jpg" alt="About our team" />
       </div>
     </div>
-  </section>
+  </section> 
   
 
-  <div class="stats-container" id="stats">
-    <div class="stat">
-      <div class="number" data-target="999">0</div>
+   <div class="stats-container" id="stats">
+    <div class="hold"><div class="stat">
+      <div class="number" data-target="450">0</div>
       <div class="lvl1">Clients</div>
-    </div>
-    <div class="stat">
-      <div class="number" data-target="999">0</div>
+    </div></div>
+    <div class="hold"><div class="stat">
+      <div class="number" data-target="900">0</div>
       <div class="lvl1">Projects</div>
-    </div>
-    <div class="stat">
-      <div class="number" data-target="999">0</div>
+    </div></div>
+    
+    <div class="hold"><div class="stat">
+      <div class="number" data-target="1200">0</div>
       <div class="label">Hours Of Support</div>
-    </div>
-    <div class="stat">
-      <div class="number" data-target="999">0</div>
+    </div></div>
+    
+    <div class="hold"><div class="stat">
+      <div class="number" data-target="700">0</div>
       <div class="lvl1">Workers</div>
-    </div>
-  </div>
+    </div></div>
+    
+    
+  </div> 
   
 
 
 
-  <section id="why" class="why-section">
+   <section id="why" class="why-section">
     <div class="why-container">
       <div class="why-left">
         <img src="./source/why1.jpg" alt="Team working illustration" class="why-image" />
@@ -148,13 +164,13 @@
 
 
 
-  <section class="services-section" id="serviceSection">
+   <section class="services-section" id="serviceSection">
     <h2>Our Services</h2>
     <div class="services-grid">
 
       <div class="service-card">
         <div class="service-icon">
-          <!-- Icon image placeholder -->
+          
           <i class="ri-home-office-line"></i>
         </div>
         <div class="service-title"> Virtual Office Assistants
@@ -224,7 +240,7 @@
       </div>
 
     </div>
-  </section>
+  </section> 
 
 
 
@@ -233,51 +249,8 @@
 
 
 
-  <section class="testimonial-container" id="testimonialSection">
-    <h2 class="testimonial-title">What they are saying <span>about us</span></h2>
-    <div class="testimonial-carousel-wrapper">
-      <button class="testimonial-arrow left-arrow">&#10094;</button>
-      <div class="testimonial-carousel" id="testimonialCarousel">
-        <div class="testimonial-card">
-          <p class="testimonial-text">This agency transformed our online presence. Professional, timely, and incredibly creative.</p>
-          <img src="https://i.pravatar.cc/100?img=1" alt="Client 1" />
-          <h4>Emily Carter</h4>
-          <span>Marketing Manager</span>
-        </div>
-        <div class="testimonial-card">
-          <p class="testimonial-text">Amazing experience from start to finish. Highly recommend their services!</p>
-          <img src="https://i.pravatar.cc/100?img=2" alt="Client 2" />
-          <h4>Liam Peterson</h4>
-          <span>Founder, GreenHive</span>
-        </div>
-        <div class="testimonial-card">
-          <p class="testimonial-text">They truly care about our brand and always go above and beyond.</p>
-          <img src="https://i.pravatar.cc/100?img=3" alt="Client 3" />
-          <h4>Sophia Daniels</h4>
-          <span>CEO, StellarEd</span>
-        </div>
-        <div class="testimonial-card">
-          <p class="testimonial-text">Their support team is responsive and reliable. They solved every challenge we faced.</p>
-          <img src="https://i.pravatar.cc/100?img=4" alt="Client 4" />
-          <h4>Noah Reed</h4>
-          <span>CTO, WebCore</span>
-        </div>
-        <div class="testimonial-card">
-          <p class="testimonial-text">The designs exceeded our expectations. Fresh, modern, and exactly what we needed.</p>
-          <img src="https://i.pravatar.cc/100?img=5" alt="Client 5" />
-          <h4>Ava Morgan</h4>
-          <span>Creative Director</span>
-        </div>
-        <div class="testimonial-card">
-          <p class="testimonial-text">Highly professional and super creative team. Loved working with them!</p>
-          <img src="https://i.pravatar.cc/100?img=6" alt="Client 6" />
-          <h4>James Owen</h4>
-          <span>Product Manager</span>
-        </div>
-      </div>
-      <button class="testimonial-arrow right-arrow">&#10095;</button>
-    </div>
-  </section>
+ 
+  
   
 
 
@@ -293,7 +266,6 @@
       </div>
   
       <div class="contactUs-grid">
-        <!-- Contact Info -->
         <div class="contactUs-details">
           <div class="contactUs-infoBox">
             <i class="ri-pin-distance-line" class="contactUs-icon"></i>
@@ -327,7 +299,7 @@
           ></iframe>
         </div>
   
-        <!-- Contact Form -->
+        
         <div class="contactUs-formWrapper">
           <form class="contactUs-form" action="">
             <div class="contactUs-formGrid">
@@ -355,7 +327,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> 
   
   
   

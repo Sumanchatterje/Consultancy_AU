@@ -1,9 +1,43 @@
-const menuToggle = document.getElementById('menuToggle');
-const navMenu = document.getElementById('navMenu');
+// const menuToggle = document.getElementById('menuToggle');
+// const navMenu = document.getElementById('navMenu');
 
-menuToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
+// menuToggle.addEventListener('click', () => {
+//   navMenu.classList.toggle('active');
+// });
+let lastScrollY = window.scrollY;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY < lastScrollY - 2) {
+    navbar.classList.remove('hidden'); // Show navbar
+  } else if (currentScrollY > lastScrollY + 2) {
+    navbar.classList.add('hidden'); // Hide navbar
+  }
+
+  lastScrollY = currentScrollY;
 });
+
+
+  const menuToggle = document.getElementById("menuToggle");
+  const navSidebar = document.getElementById("navSidebar");
+  const closeSidebar = document.getElementById("closeSidebar");
+
+  menuToggle.addEventListener("click", () => {
+    navSidebar.classList.add("active");
+  });
+
+  closeSidebar.addEventListener("click", () => {
+    navSidebar.classList.remove("active");
+  });
+
+  // Optional: close sidebar on link click
+  document.querySelectorAll('.nav-sidebar .nav-buttons').forEach(link => {
+    link.addEventListener("click", () => {
+      navSidebar.classList.remove("active");
+    });
+  });
 
 
 
@@ -24,7 +58,7 @@ menuToggle.addEventListener('click', () => {
           count += increment;
           if (count > target) count = target;
           counter.innerText = count + '+';
-          setTimeout(updateCounter, 35);
+          setTimeout(updateCounter, 23);
         } else {
           counter.innerText = target + '+';
         }
@@ -58,38 +92,4 @@ menuToggle.addEventListener('click', () => {
 
 
 
-const carousel = document.getElementById("testimonialCarousel");
-const cards = document.querySelectorAll(".testimonial-card");
-let index = 0;
-const cardsPerView = 3;
-
-function updateSlider() {
-  cards.forEach(card => card.classList.remove("active"));
-  for (let i = 0; i < cards.length; i++) {
-    if (i >= index && i < index + cardsPerView) {
-      cards[i].classList.add("active");
-    }
-  }
-  carousel.style.transform = `translateX(-${(100 / cardsPerView) * index}%)`;
-}
-
-function nextSlide() {
-  index = (index + 1) % cards.length;
-  if (index > cards.length - cardsPerView) index = 0;
-  updateSlider();
-}
-
-function prevSlide() {
-  index = (index - 1 + cards.length) % cards.length;
-  if (index > cards.length - cardsPerView) index = 0;
-  updateSlider();
-}
-
-document.querySelector(".right-arrow").addEventListener("click", nextSlide);
-document.querySelector(".left-arrow").addEventListener("click", prevSlide);
-
-// Auto slide every 4.5 seconds
-setInterval(nextSlide, 4500);
-
-// Initial display
-updateSlider();
+ 
