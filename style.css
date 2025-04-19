@@ -1240,6 +1240,24 @@ body {
   }
   
     @media (max-width: 600px){
+      .services-section h2 {
+        font-size: 1.7rem;
+        margin-bottom:0rem;
+        color: var(--primary);
+      }
+      .service-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #0d3b66; /* deep blue for titles */
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0.75rem;
+      }
+      .service-desc{
+        font-size: 14px;
+      }
+
+
+      
       .about-section {
         background-color: #f8f9fc;
         padding: 00px 20px 20px;
