@@ -1986,7 +1986,17 @@ body {
         /* background-color: black; */
         padding: 0 2.4vw;
       }
-
+      .contactUs-submit button {
+        background: linear-gradient(to right, #4da7ff, #0066ff);
+        border: none;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-bottom: 20px;
+      }
 
 
 
