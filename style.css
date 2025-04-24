@@ -125,7 +125,7 @@ body {
   color: #3a5bfd;
 }
 .btn-primary {
-  background: linear-gradient(135deg, #3a5bfd, #5f78ff);
+  background: linear-gradient(135deg, #3C92FF, #3C92FF);
   color: #ffffff; /* Ensure button text is always white */
   padding: 0.6rem 1.4rem;
   border-radius: 8px;
@@ -228,7 +228,7 @@ body {
 }
 
 .hero-title .highlight {
-  color: #3a5bfd;
+  color: #3C92FF;
 }
 
 .hero-subtitle {
@@ -253,7 +253,7 @@ body {
 
 /* Request a Callback hover gradient background */
 .hero-ctas .btn-secondary {
-  color: #3a5bfd;
+  color: #3C92FF;
   padding: 0.7rem 1.6rem;
   border-radius: 8px;
   font-weight: 500;
@@ -502,7 +502,7 @@ body {
 }
 
 .about-subtitle {
-  color: #6366f1;
+  color: #3C92FF;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 16px;
@@ -556,7 +556,7 @@ body {
 
 .stat {
   text-align: center;
-  color: #005BFF;
+  color: #2c86fb;
   /* background-color: red; */
 
   display: flex;
@@ -634,7 +634,7 @@ body {
 }
 
 .checkmark {
-  color: #6366f1;
+  color: #3C92FF;
   font-size: 18px;
   margin-right: 10px;
 }
@@ -654,7 +654,7 @@ body {
 
 
 :root {
-  --primary: #005bff;
+  --primary: #3C92FF;
   --secondary: #e0f0ff;
   --accent: #0077ff;
   --text: #1a1a1a;
@@ -785,7 +785,7 @@ body {
   color: #0b2c5d;
 }
 .testimonial-section h2 span{
-  color: #007bff;
+  color: #3C92FF;
 }
 .carousel-container {
   overflow: hidden;
@@ -897,7 +897,7 @@ body {
 }
 
 .contactUs-title span {
-  color: #007bff;
+  color: #3C92FF;
 }
 
 .contactUs-grid {
@@ -979,6 +979,7 @@ body {
   border: 1px solid #ccc;
   font-size: 0.95rem;
   transition: 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 .contactUs-formGroup textarea {
   padding: 12px;
@@ -1081,12 +1082,12 @@ body {
   height: 46px;
   border-radius: 6px;
   background: #eef3fb;
-  color: #3a5bfd;
+  color: #3C92FF;
   font-size: 24px;
   transition: all 0.3s ease;
 }
 .z-social-icons a:hover {
-  background-color: #3a5bfd;
+  background-color: #3C92FF;
   color: white;
 }
 .z-footer-bottom {
@@ -1123,7 +1124,7 @@ body {
 
   .stat {
     text-align: center;
-    color: #005BFF;
+    color: #3C92FF;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -1189,7 +1190,7 @@ body {
   }
 
   .about-subtitle {
-    color: #6366f1;
+    color: #3C92FF;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
@@ -1243,7 +1244,7 @@ body {
   .service-title {
     font-size: 18px;
     font-weight: 600;
-    color: #0d3b66; /* deep blue for titles */
+    color: #3C92FF; /* deep blue for titles */
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0.75rem;
   }
@@ -1337,7 +1338,7 @@ body {
   .service-title {
     font-size: 18px;
     font-weight: 600;
-    color: #0d3b66; /* deep blue for titles */
+    color: #3C92FF; /* deep blue for titles */
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0.75rem;
   }
@@ -1379,7 +1380,7 @@ body {
   }
 
   .about-subtitle {
-    color: #6366f1;
+    color: #3C92FF;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
@@ -1442,7 +1443,7 @@ body {
 
   .stat {
     text-align: center;
-    color: #005BFF;
+    color: #2c86fb;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -1565,12 +1566,12 @@ body {
     height: 46px;
     border-radius: 6px;
     background: #eef3fb;
-    color: #3a5bfd;
+    color: #3C92FF;
     font-size: 24px;
     transition: all 0.3s ease;
   }
   .z-social-icons a:hover {
-    background-color: #3a5bfd;
+    background-color: #3C92FF;
     color: white;
   }
   .z-footer-bottom {
@@ -1607,7 +1608,7 @@ body {
     
     .stat {
       text-align: center;
-      color: #005BFF;
+      color: #2c86fb;
       /* background-color: red; */
       display: flex;
       flex-direction: column;
@@ -1673,7 +1674,7 @@ body {
       }
       
       .about-subtitle {
-        color: #6366f1;
+        color: #3C92FF;
         font-weight: 600;
         text-transform: uppercase;
         font-size: 16px;
@@ -1727,7 +1728,7 @@ body {
     .service-title {
       font-size: 18px;
       font-weight: 600;
-      color: #0d3b66; /* deep blue for titles */
+      color: #3C92FF; /* deep blue for titles */
       font-family: 'Poppins', sans-serif;
       margin-bottom: 0.75rem;
     }
@@ -1863,7 +1864,7 @@ body {
       }
       
       .about-subtitle {
-        color: #6366f1;
+        color: #3C92FF;
         font-weight: 600;
         text-transform: uppercase;
         font-size: 16px;
@@ -1926,7 +1927,7 @@ body {
     
       .stat {
         text-align: center;
-        color: #005BFF;
+        color: #2c86fb;
         /* background-color: red; */
         display: flex;
         flex-direction: column;
