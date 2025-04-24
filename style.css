@@ -43,13 +43,8 @@ body {
   
 /* Logo */
 
-.logo {
-    font-weight: 600;
-    font-size: 1.6rem;
-    color: #0b2c5d;
-    margin-left: -5px;
-    text-transform: lowercase;
-    font-family:roboto;
+.logo img{
+    height: 30px;
 }
   
 /* Navigation Links */
@@ -1504,6 +1499,8 @@ body {
         border-radius: 10px;
         /* background-color: red; */
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        /* background-color: black; */
+        padding: 0 2.4vw;
       }
 
 
