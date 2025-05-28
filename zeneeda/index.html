@@ -351,24 +351,24 @@
 
 
       <div class="contactUs-formWrapper">
-        <form class="contactUs-form" action="">
+        <form class="contactUs-form" id="contact-form"  action="https://formsubmit.co/souvkmndal@gmail.com" method="POST">
           <div class="contactUs-formGrid">
             <div class="contactUs-formGroup">
               <label for="contactUs-name">Your Name</label>
-              <input type="text" id="contactUs-name" required />
+              <input type="text" id="contactUs-name" required name="Name :" />
             </div>
             <div class="contactUs-formGroup">
               <label for="contactUs-email">Your Email</label>
-              <input type="email" id="contactUs-email" required />
+              <input type="email" id="contactUs-email" required name="Email :"/>
             </div>
           </div>
           <div class="contactUs-formGroup">
             <label for="contactUs-subject">Subject</label>
-            <input type="text" id="contactUs-subject" required />
+            <input type="text" id="contactUs-subject" required name="Subject :"/>
           </div>
           <div class="contactUs-formGroup">
             <label for="contactUs-message">Message</label>
-            <textarea id="contactUs-message" rows="6" required ></textarea>
+            <textarea id="contactUs-message" rows="6" required name="Message :"></textarea>
           </div>
           <div class="contactUs-submit">
             <button type="submit">Send Message</button>
@@ -432,7 +432,7 @@
 
 
 </footer>
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="script.js"></script>
 
 </body>
